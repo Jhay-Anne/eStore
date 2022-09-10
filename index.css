@@ -1,0 +1,280 @@
+@font-face {
+  font-family: kumbh;
+  src: url("./KumbhSans-Regular.ttf");
+}
+body {
+  box-sizing: 0;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  height: 100vh;
+  font-family: kumbh;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px 0px;
+  margin-bottom: 30px;
+  border-bottom: 1px rgba(129, 129, 129, 0.4) solid;
+}
+
+.icon-menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu div {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  width: 400px;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar img:nth-child(1) {
+  width: 30px;
+  height: 30px;
+}
+
+.avatar img:nth-child(2) {
+  width: 50px;
+  height: 50px;
+}
+
+.main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 90%;
+}
+
+.main-prod {
+  width: 70%;
+  margin: auto;
+}
+
+.main-prod img {
+  width: 100%;
+  height: 400px;
+}
+
+.thumbnails {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.thumbnails div img {
+  filter: opacity(60%);
+}
+
+/* .thumbnails div {
+  border: 5px solid hsl(25, 100%, 94%);
+} */
+
+.right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-top div:nth-child(1) {
+  font-size: 16px;
+  color: hsl(26, 100%, 55%);
+  margin-bottom: 20px;
+}
+
+.right-top div:nth-child(2) {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.right-mid {
+  font-size: 16px;
+  margin: 30px 0;
+  width: 400px;
+}
+
+.right-price {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+
+.right-price .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price div:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price div:nth-child(2) {
+  font-size: 12px;
+  background-color: hsl(26, 100%, 94%);
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  padding-top: 5px;
+  color: hsl(26, 100%, 55%);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.right-price div:nth-child(2):not(.price div:nth-child(2)) {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.num-of-items {
+  width: 63%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.num-of-items div {
+  width: 140px;
+  background-color: rgba(128, 128, 128, 0.1);
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.num-of-items div img {
+  width: 10px;
+  height: 10px;
+}
+
+.num-of-items button {
+  height: 40px;
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+}
+
+.num-of-items button img {
+  margin-right: -50px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    height: auto;
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .icon-menu {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .main {
+    /* display: block; */
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+  .left {
+    width: 100%;
+  }
+
+  .main-prod {
+    width: 100%;
+  }
+
+  .thumbnails {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .right-mid {
+    width: 100%;
+  }
+
+  .right-price {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .price {
+    width: 130px;
+  }
+
+  .num-of-items {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .num-of-items div {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .num-of-items button {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
