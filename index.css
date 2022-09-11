@@ -244,8 +244,13 @@ body {
     width: 100%;
   }
 
-  .thumbnails {
+  .main-prod {
     width: 100%;
+    /* height: 200px; */
+  }
+
+  .thumbnails {
+    display: none;
   }
 
   .right {
