@@ -2,6 +2,11 @@
   font-family: kumbh;
   src: url("./KumbhSans-Regular.ttf");
 }
+
+@font-face {
+  font-family: kumbh-bold;
+  src: url("./KumbhSans-ExtraBold.ttf");
+}
 body {
   box-sizing: 0;
   margin: auto;
@@ -131,6 +136,7 @@ body {
   font-size: 16px;
   margin: 30px 0;
   width: 400px;
+  color: rgb(128, 128, 128, 0.7);
 }
 
 .right-price {
@@ -200,6 +206,7 @@ body {
   border: none;
   background-color: hsl(26, 100%, 55%);
   color: white;
+  box-shadow: 5px 5px 15px hsl(26, 100%, 60%);
 }
 
 .num-of-items button img {
@@ -250,6 +257,12 @@ body {
     width: 100%;
   }
 
+  .right-top div:nth-child(2) {
+    font-size: 25px;
+    font-weight: 900;
+    width: 70%;
+  }
+
   .right-price {
     width: 100%;
     flex-direction: row;
@@ -259,6 +272,11 @@ body {
 
   .price {
     width: 130px;
+  }
+
+  .price div:nth-child(1) {
+    font-weight: 900;
+    font-family: kumbh-bold;
   }
 
   .num-of-items {
